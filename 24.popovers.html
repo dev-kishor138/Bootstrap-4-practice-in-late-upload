@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 | Popovers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="img/download.ico">
+</head>
+<body>
+   
+   <h1 class="display-4 text-center mb-5">Popovers</h1>
+   <div class="container">
+      
+      <button class="btn btn-primary" data-toggle="popover" data-placement="top" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, optio!">Popovers</button>
+      
+      <button class="btn btn-success" data-toggle="popover" data-placement="left" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, optio!">Popovers</button>
+      
+      <button class="btn btn-warning" data-toggle="popover" data-placement="bottom" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, optio!">Popovers</button>
+      
+      <button class="btn btn-danger" data-toggle="popover" data-placement="right" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, optio!">Popovers</button>
+      
+      <br><br>
+      
+      <button id="popover1" class="btn btn-info" data-trigger="focus" data-toggle="popover" data-placement="top" title="Hello World!" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, optio!">Popovers</button>
+      
+      <br><hr>
+      
+      <button class="btn btn-secondary" onClick="showPopover()">Show Popover</button>
+      <button class="btn btn-secondary" onClick="hidePopover()">Hide Popover</button>
+      <button class="btn btn-secondary" onClick="togglePopover()">Toggle Popover</button>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   </div>
+   <div style="margin-top:100px;"></div> 
+    
+    
+        
+   
+    
+    
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+        $('[data-toggle="popover"]').popover();
+        
+        function showPopover(){
+            $('#popover1').popover('show');
+        }
+        function hidePopover(){
+            $('#popover1').popover('hide');
+        }
+        function togglePopover(){
+            $('#popover1').popover('toggle');
+        }
+    </script>
+   
+    
+</body>
+</html>
